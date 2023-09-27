@@ -32,6 +32,7 @@ namespace Personal.Photography.Gallery.Api.Configuration
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IClientQueriesRepository, ClientQueriesRepository>();
             services.AddScoped<IProductMongoRepository, ProductMongoRepository>();
+            services.AddScoped<IGalleryMongoRepository, GalleryMongoRepository>();
 
             // MediatorHandler
             services.AddScoped<IMediatorHandler, MediatorHandler>();
@@ -44,6 +45,7 @@ namespace Personal.Photography.Gallery.Api.Configuration
 
             //MongoDBServices
             services.AddScoped<IProductAppServices, ProductAppServices>();
+            services.AddScoped<IGalleryAppServices, GalleryAppServices>();
 
             //
 
