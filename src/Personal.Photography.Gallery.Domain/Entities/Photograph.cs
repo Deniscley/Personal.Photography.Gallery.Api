@@ -9,7 +9,7 @@ namespace Personal.Photography.Gallery.Domain.Entities
         [BsonId]
         public string Id { get; set; }
 
-        public string Filename { get; set; }
+        public string FileName { get; set; }
 
         public int PhotoNumber { get; set; }
 
