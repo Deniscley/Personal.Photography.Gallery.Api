@@ -9,15 +9,19 @@ namespace Personal.Photography.Gallery.Api.Configuration
             IConfiguration configuration)
         {
             services.AddDbContext<DataContext>(options => 
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                options.UseInMemoryDatabase(databaseName: "gallery"));
         }
 
         public static void UseDatabaseConfiguration(this IApplicationBuilder app)
         {
             using var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope();
             using var context = serviceScope.ServiceProvider.GetService<DataContext>();
-            context.Database.Migrate();
-            context.Database.EnsureCreated();
+            
+            //TODO: Configurar para fazer migração apenas quando não for banco em meḿoria
+            // if (context == null || context.Database.IsRelational()) return;
+            
+            // context.Database.Migrate();
+            // context.Database.EnsureCreated();
         }
     }
 }
