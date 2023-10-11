@@ -58,6 +58,15 @@ namespace Personal.Photography.Gallery.Api
 
             app.UseRouting();
 
+            //TODO: Configurar adequadamente posteriormente
+            app.UseCors(options =>
+            {
+                options
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin();
+            });
+
             app.UseAuthorization();
 
             app.MapControllers();
