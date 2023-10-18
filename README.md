@@ -20,7 +20,7 @@ Esse projeto é usado para fins de conhecimento e divulgação de fotos.
 
 ## Stack utilizada
 
-**Front-end:** NextJs, TypeScript, HTML5, CSS3, .Net, C#
+**Back-End:** .Net, C#
 
 ## Rodando localmente
 
@@ -60,8 +60,6 @@ Para rodar os testes, rode o seguinte comando
 Para suporte, mande um email para deniscleymaf@outlook.com
 
 ## Etiquetas
-
-Adicione etiquetas de algum lugar, como: [shields.io](https://shields.io/)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
