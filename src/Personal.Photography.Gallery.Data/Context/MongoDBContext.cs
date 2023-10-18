@@ -8,8 +8,8 @@ namespace Personal.Photography.Gallery.Data.Context
         public IMongoDatabase _database;
         public MongoDBContext() 
         {
-            _client = new MongoClient("mongodb://mongo:U4oaZbPdnbgVqaPLqHFL@containers-us-west-36.railway.app:5790");
-            _database = _client.GetDatabase("PhotographyGallery");
+            _client = new MongoClient("");
+            _database = _client.GetDatabase("");
         }
     }
 }
